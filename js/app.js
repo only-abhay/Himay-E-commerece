@@ -36,7 +36,7 @@
 
         res.data.products.forEach(product => {
           html += `
-            <div class="card" style="max-width: 320px">
+            <div class="card me-3" style="max-width: 320px">
     <img src="${product.thumbnail}" class="card-img-top" alt="Product Image">
     <div class="card-body">
         <h5 class="card-title">${product.title}</h5>
