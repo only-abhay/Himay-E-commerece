@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Axios -->
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg custom-navbar px-3">
+  <div class="container-fluid">
+
+    <!-- Logo -->
+  <a class="navbar-brand logo" href="index.html"><img src="images/Untitled Project - illustrationImage.png" alt="" width="70px" height="20px"></a>
+
+    <!-- Toggle -->
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <!-- Navbar Content -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+
+      <!-- Menu -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+      
+      </ul>
+
+      <!-- Search -->
+      <form class="d-flex search-box me-3">
+        <input class="form-control" type="search" placeholder="Search for products, brands and more">
+      </form>
+
+      <!-- Icons -->
+      <div class="d-flex align-items-center">
+
+        <div class="icon-wrapper">
+          <i class="fa-regular fa-user"></i>
+          <span class="icon-text">Profile</span>
+        </div>
+
+        <div class="icon-wrapper">
+          <i class="fa-regular fa-heart"></i>
+          <span class="icon-text">Wishlist</span>
+        </div>
+
+        <div class="icon-wrapper">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="icon-text">Bag</span>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+        <!-- Navbar end here  -->
+   <!-- hero section Strts Here  -->
+  <div class="container-fluid hero-sec p-0 mt-5">
+  <section class="hero-section">
+
+    <!-- Shapes -->
+    <div class="hero-shape shape-1"></div>
+    <div class="hero-shape shape-2"></div>
+
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- Content -->
+        <div class="col-lg-6 hero-content">
+          <h1 class="hero-title">
+           Upgrade Your Wardrobe Today
+          </h1>
+
+          <p class="hero-subtitle">
+       From Casual to Classy — Create Stunning Outfits
+          </p>
+
+          <!-- Buttons -->
+          <div class="hero-buttons d-flex flex-wrap">
+            <a href="#" class="btn btn-primary me-3 mb-2">
+              Get Started Free
+            </a>
+
+            <a href="#" class="btn btn-outline-custom mb-2">
+              Watch Demo <i class="fas fa-play ms-2"></i>
+            </a>
+          </div>
+
+          <!-- Stats -->
+          <div class="hero-stats row">
+            <div class="col-4">
+              <div class="stat-item">
+                <div class="stat-number">10K+</div>
+                <div class="stat-label">Active Users</div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">Satisfaction</div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="stat-item">
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Support</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="col-lg-6 hero-image">
+          <img 
+            src="images/27e01de2-1b15-4295-83f4-f38d712d6302.png"
+            class="hero-image-main img-fluid"
+            alt=""
+          >
+
+          <div class="floating-card card-1">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-check-circle text-success me-2"></i>
+              <span>Delivery Completed</span>
+            </div>
+          </div>
+
+          <div class="floating-card card-2">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-star text-warning me-2"></i>
+              <span>5.0 Rating</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>
+  <!-- hero section ends here  -->
+         <!-- scroll bar strts here  -->
+    <!-- category section strts here  -->
+  
+<div class="container py-4">
+
+  <!-- Categories -->
+  <h3 class="mb-3"><i class="fa-solid fa-list"></i> Categories</h3>
+  <div id="categoryList" class="row g-3 mb-4"></div>
+
+  <!-- Products -->
+  <h3 class="mb-3"><i class="fa-solid fa-box"></i> Products</h3>
+  <div id="productList" class="row g-3"></div>
+
+</div>
+<!-- products ends here  -->
+ <!-- slidr strts here  -->
+ <div class="slider-in mt-3 container">
+  <h1>Review's</h1>
+  <div class="sliding-br">
+                    <div class="left-slider">
+                        <img src="images/r1.png" alt="">
+                        <div class="in-slider">
+                            <h4>Fannie Rowe</h4>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <p>
+                            Accessories Here you can find the best computer accessory for your laptop,<br> monitor,
+                            printer, scanner, speaker. Here you can find the best computer <br>accessory for your
+                            laptop, monitor, printer, scanner, speaker.
+                        </p>
+                    </div>
+                    <div class="right-slider">
+                            <img src="images/r1.png" alt="">
+                            <div class="in-slider">
+                                <h4>Hulda Sutton</h4>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                            <p>
+                                Accessories Here you can find the best computer accessory for your laptop,<br> monitor,
+                                printer, scanner, speaker. Here you can find the best computer <br>accessory for your
+                                laptop, monitor, printer, scanner, speaker.
+                            </p>
+                    </div>
+                             <div class="left-slider">
+                        <img src="images/r1.png" alt="">
+                        <div class="in-slider">
+                            <h4>Fannie Rowe</h4>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+
+                        <p>
+                            Accessories Here you can find the best computer accessory for your laptop,<br> monitor,
+                            printer, scanner, speaker. Here you can find the best computer <br>accessory for your
+                            laptop, monitor, printer, scanner, speaker.
+                        </p>
+                    </div>
+                    <div class="right-slider">
+                            <img src="images/r1.png" alt="">
+                            <div class="in-slider">
+                                <h4>Hulda Sutton</h4>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                            <p>
+                                Accessories Here you can find the best computer accessory for your laptop,<br> monitor,
+                                printer, scanner, speaker. Here you can find the best computer <br>accessory for your
+                                laptop, monitor, printer, scanner, speaker.
+                            </p>
+                        
+                    </div>
+                </div>
+                </div>
+<!-- slider ends here  -->
+ <!-- accordion strts here  -->
+  <div class="container">
+     <div class="accordian" id="acco">
+            <div class="container-acco">
+                <h1>FAQ Questions</h1>
+                <div class="card">
+                    <div class="title">What products do you sell? <i class="fa-solid fa-angle-right"></i></div>
+                    <div class="para">
+                        <p>We offer a wide range of products including electronics, fashion, home essentials, and more.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="title">How do I place an order? <i class="fa-solid fa-angle-right"></i></div>
+                    <div class="para">
+                        <p>Browse products, add items to your cart, and proceed to checkout to complete your purchase.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="title">Do I need an account to place an order? <i class="fa-solid fa-angle-right"></i></div>
+                    <div class="para">
+                        <p>No, you can checkout as a guest, but creating an account helps track orders easily.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+   <!-- Footer srts here  -->
+  <footer class="modern-footer pt-5">
+
+  <div class="container footer-content">
+    <div class="row g-4 mb-5">
+
+      <!-- Company -->
+      <div class="col-lg-4 col-md-6">
+        <a href="#" class="footer-logo d-block mb-4 text-decoration-none">
+          Himay<span class="text-primary">.</span>
+        </a>
+
+        <p class="text-muted mb-4">
+          Style Youself With Us 
+        </p>
+
+        <ul class="contact-info mb-4 list-unstyled">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span>123 Business Avenue, Suite 100<br>New York, NY</span>
+          </li>
+          <li>
+            <i class="fas fa-phone"></i>
+            <span>+1 (555) 123-4567</span>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <span>contact@Himay.com</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Links -->
+      <div class="col-lg-4 col-md-6">
+        <h3 class="footer-title">Quick Links</h3>
+
+        <ul class="quick-links">
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">About Company</a></li>
+          <li><a href="#">Latest Projects</a></li>
+          <li><a href="#">Recent News</a></li>
+          <li><a href="#">Customer Support</a></li>
+          <li><a href="#">Contact Details</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-lg-4 col-md-12">
+        <h3 class="footer-title">Stay Connected</h3>
+
+        <p class="text-muted mb-4">
+          Subscribe to our newsletter and stay updated.
+        </p>
+
+        <form class="mb-4">
+          <input 
+            type="email" 
+            class="form-control newsletter-input mb-3" 
+            placeholder="Your email address"
+          >
+
+          <button class="btn btn-subscribe text-white w-100">
+            Subscribe Now
+          </button>
+        </form>
+
+        <div class="social-links">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row py-4">
+        <div class="col-md-6 text-center text-md-start">
+          <p>&copy; 2024 YourBrand. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p>
+            Made with <i class="fas fa-heart text-danger"></i> 
+            by <a href="#">YourBrand</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>
+ </a>
+</body>
+      <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
